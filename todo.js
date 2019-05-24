@@ -20,12 +20,4 @@ $("input").on("keypress",function(e){
 $("#loop").on("click",function(){
 	$("input").slideToggle("slow");
 });
-$("ul").on("click","span",function(e){
-	e.stopPropagation();
-	$(this).parent().on("mouseenter",function(){
-		$("#loop").fadeIn("slow");
-	});
-	$(this).parent().on("mouseleave",function(){
-		$("#loop").fadeOut("slow");
-	});
-	});
+
